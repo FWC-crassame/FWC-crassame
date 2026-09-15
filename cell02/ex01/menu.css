@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #fdf6ec;
+    color: #3b2f2f;
+}
+
+/* ---- Top navigation bar ---- */
+.menu {
+    background-color: #5c3d2e;
+}
+
+.menu > ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu > ul > li {
+    position: relative;
+}
+
+.menu > ul > li > a {
+    display: block;
+    padding: 18px 28px;
+    color: #f5e6d3;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.menu > ul > li:hover > a {
+    background-color: #8a5a3f;
+}
+
+/* ---- Dropdown submenu ---- */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #fff;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+
+    /* hidden by default */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 20px;
+    color: #5c3d2e;
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid #f1e6d8;
+}
+
+.submenu li:last-child a {
+    border-bottom: none;
+}
+
+.submenu li a:hover {
+    background-color: #f5e6d3;
+    padding-left: 26px;
+}
+
+/* Reveal submenu on hover of parent item */
+.menu > ul > li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ---- Page content ---- */
+.content {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.2em;
+    margin-bottom: 16px;
+    color: #5c3d2e;
+}
+
+.content p {
+    font-size: 1.1em;
+    color: #6b5a4d;
+}
