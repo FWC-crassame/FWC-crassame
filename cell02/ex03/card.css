@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #eef1f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ---- Card container ---- */
+.card {
+    background-color: #ffffff;
+    width: 280px;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    text-align: center;
+}
+
+/* ---- Header ---- */
+.card-header {
+    background-color: #ff9436;
+    padding: 18px 0;
+}
+
+.card-header h1 {
+    color: #ffffff;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+}
+
+/* ---- Invisible table used purely for layout ---- */
+.card-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+}
+
+.card-table td {
+    border: none;
+    text-align: center;
+    padding: 8px 0;
+}
+
+/* ---- Profile picture ---- */
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 3px solid #ff9436;
+    margin-top: 20px;
+    object-fit: cover;
+}
+
+/* ---- Login ---- */
+.login {
+    font-weight: bold;
+    font-size: 1.05em;
+    color: #222;
+}
+
+/* ---- Location ---- */
+.location {
+    color: #999;
+    font-size: 0.85em;
+}
+
+/* ---- Description ---- */
+.description {
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* ---- Social icons row ---- */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 6px 0;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eef1f5;
+    color: #ff9436;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: #ff9436;
+    color: #ffffff;
+}
+
+/* ---- Contact button ---- */
+.contact-btn {
+    display: inline-block;
+    margin: 16px auto 20px;
+    padding: 10px 32px;
+    background-color: #ff9436;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 24px;
+    transition: background-color 0.2s ease;
+}
+
+.contact-btn:hover {
+    background-color: #c9602c;
+}
